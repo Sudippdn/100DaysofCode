@@ -12,12 +12,18 @@
 
 # print("\n3. String function")
 
-# name= "My name is Sudip Pradhan. I live in Kathmandu with my brother."
+name= "My name is Sudip Pradhan. I live in Kathmandu with my brother."
+# doubleSpace= "Check whether there is  double space or not"
 # print(len(name))
 # print(name.endswith("brother."))
 # print(name.count("a"))
 # print(name.capitalize())
+# print(name.upper())
+# print(name.lower())
+# print(name.title())
+# print(name.replace("Sudip","Subash"))
 # print(name.find("Sudip"))
+# print(doubleSpace.find(" ")) 
 # print(name.replace("Sudip","Subash"))
 # print("\n-----------Here is a break to see it clearly-------------\n")
 # print(name.join(["First sentence is " ,"\nSecond sentence is ", "\nLast sentence is not available by default!!! "]))
@@ -35,6 +41,19 @@
 # a, b,c, d=40,30,20,10
 # print(a+b+c)
 # # output = 90
+# z= (23,"Sudip", 23.5)
+# print(z)
+
+#Arithmetic Operation
+# print(10%3) #1
+# print(10/3) #3.333333
+# print(10//3) #3
+# print(10*3) #30
+# print(10**3) #1000
+# print(10+3*2*2)     # Operator precedence
+# print(abs(-29))       #absolute value =29
+# import math
+# print(math.ceil(2.9))  #ceil value
 
 # print("\n7. Displaying the datatype in python")
 # a=90
@@ -55,18 +74,52 @@
 # name = input("Enter your name ")
 # print(name)
 
-# print("\nSend letter to multiple people")
+# print("\n10. Send letter to multiple people")
 
 # letter = '''Hello, <|NAME|>
 # You have been selected in my python program.
 # Happy to see you in the program.
 # Greeeting from the company head.
 
-# Data: <|DATE|>'''
+# Date: <|DATE|>'''
 
 # name=input("Enter name of the candidate: ")
 # date=input("Enter date: ")
 # letter=letter.replace("<|NAME|>",name)
 # letter=letter.replace("<|DATE|>",date)
 # print(letter)
+
+# # print("\n11. Over write the list data")
+# a= [2,3,4,5,6,7]
+# a[1]=34
+# print(a)
+# print(a[2])
+
+
+# print("\n12. Listing indexing") 
+# list=[20,30,40,50,"Sudip"]
+# print(list[2])
+# print(list[0:5])
+# print(list.reverse())
+# List Methods
+#  1. list.reverse()
+#  2. list.sort
+#  3. list.oppend 
+
+
+
+
+# name=input("Enter yout name ")
+# color=input("Enter your favourite color ")
+# print(name + " likes " + color + " color")
+# birth=input("Enter your birth year")
+# print("\n13. Use integer calculation")
+# current_year= input("Eneter current year")
+# your_age= int(current_year)-int(birth)
+# print(your_age)
+
+# print("\n14. Ask a user weight in gram, convert to kilogream and print on the terminal")
+# weight= input("Enter the weight in gram")
+# kilogram= int(weight)/1000
+# print(kilogram)
 
