@@ -4,6 +4,7 @@
 # print(type(firstName))
 # name= firstName+LastName
 # print(name)
+#print(name.count())
 
 # print("\n2. Skip Function")
 # c= "SudipIsGoodBoy"
