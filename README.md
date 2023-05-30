@@ -34,7 +34,7 @@ print(a[2])
 
 Tuples are sequences of elements that can contain different data types that can be defined using either parentheses or not but the output always comes with parentheses.
 
-## Declaring tuples
+### Declaring tuples
 
 ```python
 number1 = 1,2,3 # without using parentheses
@@ -42,6 +42,26 @@ number2 = (5,6,7) # using parentheses
 print(number1) 
 print(number2)
 ```
-## Output
+#### Output
 ![tuples](https://github.com/Sudippdn/Python-from-beginning/assets/104957400/0a44ea3a-3272-4259-870a-ad245e374eee)
+
+## Unpacking
+
+Unpacking is the part of tuple that can access the individual elements of tuples. It is a feature of python that can make coding faster and easier.
+
+### Coding part
+
+```python
+coordinates = (1,2,3)
+
+# x= coordinates[0]
+# y = coordinates[1]
+# z= coordinates[2]
+
+# To write the same things of above expressions, we can assign like this; 
+x, y, z = coordinates
+print(y*z) # Output = 6
+
+```
+
 
