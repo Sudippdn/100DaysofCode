@@ -50,9 +50,9 @@ List of the items are:
 # Day 2 - Tuples
 
 Tuples are sequences of elements that can contain different data types that can be defined using either parentheses or not but the output always comes with parentheses.
-
+##### Note
 ```python
-Note: You cann't rewrite or change the value of the element inside the parenthesis of tuples like  listing
+You cann't rewrite or change the value of the element inside the parenthesis of tuples like  listing
 ```
 
 ### Declaring tuples
