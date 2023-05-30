@@ -30,3 +30,16 @@ a[1]=34
 print(a)
 print(a[2])
 ```
+# Day 2 - Tuples
+
+Tuples are sequences of elements that can contain different data types that can be defined using either parentheses or not but the output always comes with parentheses.
+
+## Declaring tuples
+
+```python
+number1 = 1,2,3 # without using parentheses
+number2 = (5,6,7) # using parentheses
+print(number1) 
+print(number2)
+
+```
