@@ -41,9 +41,9 @@ matrix = [
 print(matrix[0][2]) # way to access the value of indivisual element of particular positiion
 
 print("""          
-for rows in matrix:           # tO display the items in matrix
+for rows in matrix:          
 List of the items are: 
-      """)
+      """)  # tO display the items in matrix
     for items in rows:
         print(items)
 ```
