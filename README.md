@@ -41,9 +41,7 @@ number1 = 1,2,3 # without using parentheses
 number2 = (5,6,7) # using parentheses
 print(number1) 
 print(number2)
-
- ##Output
-![tuples](https://github.com/Sudippdn/Python-from-beginning/assets/104957400/dd4e64c4-0053-437c-9e56-a29f63d20941)
-
-
 ```
+## Output
+![tuples](https://github.com/Sudippdn/Python-from-beginning/assets/104957400/0a44ea3a-3272-4259-870a-ad245e374eee)
+
