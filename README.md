@@ -42,4 +42,7 @@ number2 = (5,6,7) # using parentheses
 print(number1) 
 print(number2)
 
+ ##Output
+![tuples](https://github.com/Sudippdn/Python-from-beginning/assets/104957400/d4b82d90-35a3-425e-9911-a015def873b9)
+
 ```
