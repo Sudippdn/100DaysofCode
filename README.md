@@ -40,8 +40,8 @@ matrix = [
 ]
 print(matrix[0][2]) # way to access the value of indivisual element of particular positiion
 
-print("""            # TO display the items in matrix
-for rows in matrix:
+print("""          
+for rows in matrix:           # tO display the items in matrix
 List of the items are: 
       """)
     for items in rows:
