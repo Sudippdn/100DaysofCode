@@ -43,6 +43,7 @@ print(number1)
 print(number2)
 
  ##Output
-![tuples](https://github.com/Sudippdn/Python-from-beginning/assets/104957400/d4b82d90-35a3-425e-9911-a015def873b9)
+![tuples](https://github.com/Sudippdn/Python-from-beginning/assets/104957400/dd4e64c4-0053-437c-9e56-a29f63d20941)
+
 
 ```
