@@ -30,6 +30,23 @@ a[1]=34
 print(a)
 print(a[2])
 ```
+### Declaring Matrix 
+
+```python
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+print(matrix[0][2]) # way to access the value of indivisual element of particular positiion
+
+print("""            # TO display the items in matrix
+for rows in matrix:
+List of the items are: 
+      """)
+    for items in rows:
+        print(items)
+```
 # Day 2 - Tuples
 
 Tuples are sequences of elements that can contain different data types that can be defined using either parentheses or not but the output always comes with parentheses.
