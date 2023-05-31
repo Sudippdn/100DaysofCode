@@ -103,7 +103,7 @@ else:
     print("It's a cold day")
         
 ```
- Day 4
+# Day 4
 ## Slice Operator
 
 ### if condition
