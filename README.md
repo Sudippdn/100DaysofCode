@@ -38,12 +38,14 @@ matrix = [
     [4, 5, 6],
     [7, 8, 9]
 ]
-print(matrix[0][2]) # way to access the value of indivisual element of particular positiion
+# way to access the value of indivisual element of particular positiion
+print(matrix[0][2]) 
 
+# tO display the items in matrix
 print("""          
 for rows in matrix:          
 List of the items are: 
-      """)  # tO display the items in matrix
+      """)  
     for items in rows:
         print(items)
 ```
