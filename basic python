@@ -4,30 +4,36 @@
 # print(type(firstName))
 # name= firstName+LastName
 # print(name)
-#print(name.count())
 
-# print("\n2. Skip Function")
-# c= "SudipIsGoodBoy"
-# print(c[0:])
-# print(c[0: :3]) # Output=Sisoo
+# print("\n2. Slice Operator")
+# slice operator as string
+name= "SudipIsGoodBoy"
+print(name[0:5]) #Output = Sudip
+print(name[0: :3]) # Output=Sisoo
+
+#slice operator as list
+list = [2,0,2,3,0,5,2,3]
+print(list[2::2]) #Output = [2,0,2]
 
 # print("\n3. String function")
 
-name= "My name is Sudip Pradhan. I live in Kathmandu with my brother."
+# name= "My name is Sudip Pradhan. I live in Kathmandu with my brother."
 # doubleSpace= "Check whether there is  double space or not"
-# print(len(name))
-# print(name.endswith("brother."))
-# print(name.count("a"))
-# print(name.capitalize())
-# print(name.upper())
-# print(name.lower())
+# print(len(name)) # This will show the length of the variable
+# print(name.endswith("brother.")) #This will show if the variable ends with "brother." or not, true or false   
+# print(name.count("a")) # Count the number of repetation of the string/character in the string
+# print(name.capitalize())  #This function will remove the capital letters of the particular string
+# print(name.upper())   #will capitalize all the words
+# print(name.lower())   #will remove all the capital letters
 # print(name.title())
 # print(name.replace("Sudip","Subash"))
 # print(name.find("Sudip"))
+# print('Sudip' in name) # The output will be either true or false checking the resence of string 'Sudip'
 # print(doubleSpace.find(" ")) 
-# print(name.replace("Sudip","Subash"))
+
 # print("\n-----------Here is a break to see it clearly-------------\n")
-# print(name.join(["First sentence is " ,"\nSecond sentence is ", "\nLast sentence is not available by default!!! "]))
+# print(name.join(["First sentence is " ,"\nSecond sentence is ", "\nLast sentence is not available by default!!! "]))  
+#This above join  operation will simply add first sentence with the string at the begining and at the end of the sentence
 
 # print("\n4. Finding the gcd of any two integers")
 # import math
@@ -45,7 +51,7 @@ name= "My name is Sudip Pradhan. I live in Kathmandu with my brother."
 # z= (23,"Sudip", 23.5)
 # print(z)
 
-#Arithmetic Operation
+# # Arithmetic Operation
 # print(10%3) #1
 # print(10/3) #3.333333
 # print(10//3) #3
@@ -66,10 +72,10 @@ name= "My name is Sudip Pradhan. I live in Kathmandu with my brother."
 
 # print("\n8. Choosing the random number using python")
 # from random import*
-# # when you don't want any space inbetween random numbers
-# print(randint(0,10),randint(0,10),randint(0,10),randint(0,10),randint(0,10),randint(0,10),randint(0,10))
-# # when you don't want any space inbetween random numbers
-# print(randint(0,10),randint(0,10),randint(0,10),randint(0,10),randint(0,10),randint(0,10),randint(0,10),sep='')
+# when want just a space inbetween random numbers
+# print(randint(0,10),randint(0,10))
+# when you want particular/manual space  inbetween random numbers
+# print(randint(0,10), randint(0,10),randint(0,10),sep='')
 
 # print("\n9. User input")
 # name = input("Enter your name ")
@@ -93,8 +99,8 @@ name= "My name is Sudip Pradhan. I live in Kathmandu with my brother."
 # # print("\n11. Over write the list data")
 # a= [2,3,4,5,6,7]
 # a[1]=34
-# print(a)
-# print(a[2])
+# print(a) ##here the ouput will replace 3 with 34
+# print(a[2])  ## The output will be only 4
 
 
 # print("\n12. Listing indexing") 
@@ -102,10 +108,10 @@ name= "My name is Sudip Pradhan. I live in Kathmandu with my brother."
 # print(list[2])
 # print(list[0:5])
 # print(list.reverse())
-# List Methods
-#  1. list.reverse()
-#  2. list.sort
-#  3. list.oppend 
+# # List Methods
+# #  1. list.reverse()
+# #  2. list.sort
+# #  3. list.oppend 
 
 
 
@@ -124,3 +130,90 @@ name= "My name is Sudip Pradhan. I live in Kathmandu with my brother."
 # kilogram= int(weight)/1000
 # print(kilogram)
 
+# # IF else condition and indentaton matters in python
+# is_hot= False
+# is_cold= False
+
+# if is_hot:
+#     print("It's hot day")
+# elif is_cold:
+#     print("It's not hot day")
+#     print("Please wear warm clothes")
+#     print("I am not happy right now")
+# else:
+#     print("Its a lovely day")
+#     print("beautiful")
+
+
+#if an applicant has high income and good credt eligible for loan
+# high_incoome= True
+# has_good_credit= True
+# if high_incoome:
+#     if has_good_credit:
+#         print("Eligible for loan")
+#     else:
+#         print("SOrry, you don't have good credit due to which we are not abl to give loan")
+# else:
+#     print("Not eligible for bank loan")
+
+# print("\n Use of and operator")
+# if_good_credit=True
+# not_a_criminal= True
+# if if_good_credit and not_a_criminal:
+#     print("Give loan")
+# else:
+#     print("Kick his ass")
+
+#Comparision operator in python
+# temperature= int(input("Enter tem in degree celcius: "))
+# if (temperature<30):
+#     if (temperature>15):
+#         print("It's bearutiful day")
+#     else:
+#         print("It's a cold day")
+# else:
+#     print("It's a cold day")
+        
+
+
+# print("/n Project to convert kg to gram and vice versa")
+# weight= int(input("Enter weight:"))
+# unit= input("K or g")
+# if unit.upper()==K:
+#     convert=weight*1000
+#     print(f"You are {convert} grams ")
+# else:
+#     convert= g/1000
+#     print("You are {convert} kilos")
+
+## while loop
+# i=1
+# while i<5:
+#     print('*'*i)
+#     i+=1
+# print("Done")
+
+##projec 2
+# Guess a number to win
+# secret_number= 9
+# Guess_count=0
+# Guess_limit=3
+# while Guess_count < Guess_limit:
+#     Guess=int(input("Guess: "))
+#     Guess_count+=1
+#     if Guess==secret_number:
+#         print("You Won!")
+#         break
+# else:
+#     print('Your failed!')
+ 
+ 
+# #
+# # for loop 
+# 1
+# for a in 'python':
+#     print(a)
+   
+# 2. 
+# for item in range(1,12,2): # Z belongs to 1 to 12, where the number 2 is the number of step jump
+#     print(item) 
