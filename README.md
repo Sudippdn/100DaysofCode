@@ -47,7 +47,8 @@ List of the items are:
     for items in rows:
         print(items)
 ```
-# Day 2 - Tuples
+# Day 2 
+## Tuples
 
 Tuples are sequences of elements that can contain different data types that can be defined using either parentheses or not but the output always comes with parentheses.
 ##### Note
@@ -84,5 +85,20 @@ x, y, z = coordinates
 print(y*z) # Output = 6
 
 ```
+# Day 3
+## Conditional statement 
+In python, conditional statement is same like in C or C++ but curly bracket is replaced by colon ':' and 'else if' is replaced  with 'elif'.
 
+### Comparison Operator 
+```
+temperature = int(input("Enter tem in degree celcius: "))
+if (temperature<30):
+    if (temperature>15):
+        print("It's bearutiful day")
+    else:
+        print("It's a cold day")
+else:
+    print("It's a cold day")
+        
+```
 
