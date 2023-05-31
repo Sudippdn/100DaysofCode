@@ -106,7 +106,6 @@ else:
 # Day 4
 ## Slice Operator
 
-### if condition
 ```python
 print(variable_name[starting:end:step_skip])
 ```
