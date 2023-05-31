@@ -90,7 +90,7 @@ print(y*z) # Output = 6
 In python, conditional statement is same like in C or C++ but curly bracket is replaced by colon ':' and 'else if' is replaced  with 'elif'.
 
 ### if condition
-```
+```python
 temperature = int(input("Enter tem in degree celcius: "))
 if (temperature<30):
     if (temperature>15):
@@ -105,16 +105,17 @@ else:
 ## Skip Function
 
 ### if condition
-```
+```python
 print(variable_name[starting:end:step_skip])
 ```
-```
-#slice operator as string
+#### using slice operator during string 
+```python
 name= "SudipIsGoodBoy"
 print(name[0:5]) #Output = Sudip
 print(name[0: :3]) # Output=Sisoo
-
-#slice operator as list
+```
+#### Using slice operator during listing
+```python
 list = [2,0,2,3,0,5,2,3]
 print(list[2::2]) #Output = [2,0,2]
         
