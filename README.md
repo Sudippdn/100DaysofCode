@@ -101,4 +101,22 @@ else:
     print("It's a cold day")
         
 ```
+ Day 4
+## Skip Function
+
+### if condition
+```
+print(variable_name[starting:end:step_skip])
+```
+```
+#slice operator as string
+name= "SudipIsGoodBoy"
+print(name[0:5]) #Output = Sudip
+print(name[0: :3]) # Output=Sisoo
+
+#slice operator as list
+list = [2,0,2,3,0,5,2,3]
+print(list[2::2]) #Output = [2,0,2]
+        
+```
 
