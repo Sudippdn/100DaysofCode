@@ -89,7 +89,7 @@ print(y*z) # Output = 6
 ## Conditional statement 
 In python, conditional statement is same like in C or C++ but curly bracket is replaced by colon ':' and 'else if' is replaced  with 'elif'.
 
-### Comparison Operator 
+### if condition
 ```
 temperature = int(input("Enter tem in degree celcius: "))
 if (temperature<30):
