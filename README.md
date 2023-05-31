@@ -104,7 +104,7 @@ else:
         
 ```
  Day 4
-## Skip Function
+## Slice Operator
 
 ### if condition
 ```python
