@@ -54,7 +54,7 @@ List of the items are:
 
 Tuples are sequences of elements that can contain different data types that can be defined using either parentheses or not but the output always comes with parentheses.
 ##### Note
-```python
+```word
 You cann't rewrite or change the value of the element inside the parenthesis of tuples like  listing
 ```
 
@@ -120,5 +120,38 @@ print(name[0: :3]) # Output=Sisoo
 list = [2,0,2,3,0,5,2,3]
 print(list[2::2]) #Output = [2,0,2]
         
+```
+# Day 5
+## Dictionary 
+
+Dictionary is a built-in data structure that allows you to store and retrieve data using key-value pairs. Dictionaries are mutable, unordered collections, and they are also known as associative arrays or hash maps in other programming languages.
+
+## Example
+#### Constructing dictionary with variable name customers_detail
+```python
+customers_detail = {
+    "Name" : "Sudip Pradhan",
+    "age": 21,
+    "living" : "Kathmandu"
+}
+```
+
+#### Accessing and Modifying value by key
+
+```python
+print("Before changing name, " + customers_detail["Name"])
+customers_detail["Name"] = "Rajesh Hamal"
+print("After changing name, " + customers_detail["Name"])
+```
+#### Adding new key-value pair
+```python
+customers_detail["College_Name"]  = "Madan Bhandari Memorial College"
+print(customers_detail["College_Name"])
+```
+
+#### Removing key-value
+```python
+del customers_detail["living"]
+print(customers_detail.get("living"))
 ```
 
