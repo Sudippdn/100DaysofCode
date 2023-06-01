@@ -139,19 +139,20 @@ customers_detail = {
 #### Accessing and Modifying value by key
 
 ```python
-print("Before changing name, " + customers_detail["Name"])
-customers_detail["Name"] = "Rajesh Hamal"
-print("After changing name, " + customers_detail["Name"])
+print("Before changing name, " + customers_detail["Name"])  # Output =Before changing name, Sudip Pradhan
+customers_detail["Name"] = "Rajesh Hamal"                   # modifying value
+print("After changing name, " + customers_detail["Name"])   # Output = After changing name, Rajesh Hamal
 ```
 #### Adding new key-value pair
 ```python
 customers_detail["College_Name"]  = "Madan Bhandari Memorial College"
-print(customers_detail["College_Name"])
+print(customers_detail["College_Name"])         # Madan Bhandari Memorial College
 ```
 
 #### Removing key-value
 ```python
 del customers_detail["living"]
-print(customers_detail.get("living"))
+print(customers_detail.get("living"))      # Output = None
 ```
+
 
