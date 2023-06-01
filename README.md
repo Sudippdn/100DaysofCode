@@ -146,13 +146,13 @@ print("After changing name, " + customers_detail["Name"])   # Output = After cha
 #### Adding new key-value pair
 ```python
 customers_detail["College_Name"]  = "Madan Bhandari Memorial College"
-print(customers_detail["College_Name"])         # Madan Bhandari Memorial College
+print(customers_detail["College_Name"])         # Output = Madan Bhandari Memorial College
 ```
 
 #### Removing key-value
 ```python
 del customers_detail["living"]
-print(customers_detail.get("living"))      # Output = None
+print(customers_detail.get("living"))           # Output = None
 ```
 
 
