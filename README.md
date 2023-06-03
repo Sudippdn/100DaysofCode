@@ -49,6 +49,15 @@ List of the items are:
     for items in rows:
         print(items)
 ```
+### Displaying the datatype in python
+```python
+a=90
+b=82.9898984342
+b=False
+print(type(a)) # output=<class 'int'>
+print(type(b)) # output=<class 'float'>
+print(type(c)) # output=<class 'bool'>
+```
 # Day 2 
 ## Tuples
 
