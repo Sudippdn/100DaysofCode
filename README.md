@@ -163,22 +163,6 @@ print(customers_detail["College_Name"])         # Output = Madan Bhandari Memori
 del customers_detail["living"]
 print(customers_detail.get("living"))           # Output = None
 ```
-## Converting symbol to emoji using dictionary  method
-```python
-# Split operation is used here
-message = input("> ")
-words = message.split(" ")
-emojis = {
-    ":)" : "😉" , # win + semicolon or fullstop
-    ":(" : "😒",
-    "<3" : "❤"
-}
-output = ""   # Double inverted commas declares anything before desplaying ouptut  
-for word in words:
-    output += emojis.get(word,  word) + " "
-print(output)
- 
-```
 # Day 6
 ## Split() method
 Split method is used in python to split in a list to the given string to varius substrings
@@ -197,7 +181,7 @@ emojis = {
     ":(" : "😒",
     "<3" : "❤"
 }
-output = "Thus us: "
+output = " "   # Double inverted commas declares anything before displaying ouptut  
 for word in words:
     output += emojis.get(word,  word) + " "
 print(output)
