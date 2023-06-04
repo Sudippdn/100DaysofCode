@@ -181,14 +181,14 @@ print(output)
 ```
 # Day 6
 ## Split() method
-Split method is used in python to split in a list to the given string to varius substring
+Split method is used in python to split in a list to the given string to varius substrings
 ```python
 message = "hi bibek how are you"
 print(message.split()) 
 # output = ['hi', 'bibek', 'how', 'are', 'you']
 ```
 #### Example
-Here an exmaple of using split() method to split the given strin along with the emoji convertor using dictionary in puthon
+Here an exmaple of using split() method to split the given string along with the emoji convertor using dictionary in python
 ```python
 message = input("> ")
 words = message.split(" ")
