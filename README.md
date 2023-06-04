@@ -179,5 +179,27 @@ for word in words:
 print(output)
  
 ```
-
+# Day 6
+## Split() method
+Split method is used in python to split in a list to the given string to varius substring
+```python
+message = "hi bibek how are you"
+print(message.split()) 
+# output = ['hi', 'bibek', 'how', 'are', 'you']
+```
+#### Example
+Here an exmaple of using split() method to split the given strin along with the emoji convertor using dictionary in puthon
+```python
+message = input("> ")
+words = message.split(" ")
+emojis = {
+    ":)" : "😉" , # win + semicolon or fullstop
+    ":(" : "😒",
+    "<3" : "❤"
+}
+output = "Thus us: "
+for word in words:
+    output += emojis.get(word,  word) + " "
+print(output)
+ ```
 
