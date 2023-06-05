@@ -233,7 +233,7 @@ print(a.x)
  There are two types of constructor in python unlike cpp. They are:
  ```bash
   1. __init__()
-  2. --new__()
+  2. __new__()
  ```
  #### 1. __init__()
  ```python
