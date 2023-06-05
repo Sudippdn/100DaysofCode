@@ -163,6 +163,25 @@ print(customers_detail["College_Name"])         # Output = Madan Bhandari Memori
 del customers_detail["living"]
 print(customers_detail.get("living"))           # Output = None
 ```
+#### Displaying the interger value corresponding to their name
+```python
+hone = input("Phone: ")
+numbering = {
+    "1" : "one",
+    "2" : "two",
+    "3" : "three",
+    "4" : "four",
+    "5" : "five",
+    "6" : "six",
+    "7" : "seven",
+    "8" : "eight",
+    "9" : "nine"
+}
+output = ""
+for ch in phone:
+    output += numbering.get(ch) + " "     # input = 529
+print(output )                            # Output = five two nine
+```
 # Day 6
 ## Split() method
 Split method is used in python to split in a list to the given string to varius substrings
