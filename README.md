@@ -213,4 +213,33 @@ def square(number):
     return number*number
 print(square(3))
  ```
+ # Day 8
+ ## Class
+ A class encapsulates data (in the form of attributes or properties) and behaviors (in the form of methods or functions) related to a specific concept or entity. It makes easier for programmer to declare data once and perform for multiple datas using different objects.
+ 
+  ```python
+  class A:
+    def sum(self):
+        print("just kidding")
+    def joke(self):
+        print("sorry, the joke is done")
+a = A() # decalring oject
+a.joke() # using class to access funtion
+a.x=20
+a.sum()
+print(a.x)  
+   ```
+ ### Constructor
+ There are two types of constructor in python unlike cpp. They are:
+      1. __init__()
+      2. --new__()
+   
+ #### 1. __init__()
+ ```python
+ class first_class:
+    def __init__(self, x, y): 
+        self.add = x+y
+fc = first_class(10, 30)  
+print("The sum of x and y is ", fc.add)         # output = 40
+ ```    
 
