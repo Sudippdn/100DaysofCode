@@ -186,4 +186,31 @@ for word in words:
     output += emojis.get(word,  word) + " "
 print(output)
  ```
+ # Day 7
+ ## Function
+ Today I learned about the basic uses of funtion in python. In python, we define function by initilizing 'def' keyword. The other parameters are the same like C or C++. The new thing I learned here is, in the calling function, we can pass the argument in two ways, i.e using positional argument and key argument
+ 
+ ### Examples
+ #### Function that doesn't return 
+  ```python
+  def user_name(first_name, last_name):
+    print(f"Hi {first_name} {last_name}")
+# using both keyword arguments
+user_name(last_name ="Pradhan", first_name = "Sudip")
+# using both positional arguments
+user_name("Sudip","Pradhan")
+# using positional and keyword argument
+user_name("Sudip", last_name = "Pradhan")
+
+# but we can't mention like
+# user_name("first_name = "Sudip", "Pradhan")
+# or user_name("Sudip", first_name) as it gives error saying having multiple value of first_name
+  ```
+  #### Function that return value
+ ```python
+# Return Value in python
+def square(number):
+    return number*number
+print(square(3))
+ ```
 
