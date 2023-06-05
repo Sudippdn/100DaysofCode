@@ -231,9 +231,10 @@ print(a.x)
    ```
  ### Constructor
  There are two types of constructor in python unlike cpp. They are:
-      1. __init__()
-      2. --new__()
-   
+ ```bash
+  1. __init__()
+  2. --new__()
+ ```
  #### 1. __init__()
  ```python
  class first_class:
