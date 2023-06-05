@@ -261,5 +261,20 @@ print(a.x)
         self.add = x+y
 fc = first_class(10, 30)  
 print("The sum of x and y is ", fc.add)         # output = 40
- ```    
+```
+# Day 9
+## Exception
+Exception is used to replace the particular type of error in python. Here are the few examples of excemption used instead of ValueError, zeroDivisionError. This helps programmer to understand the particular type of error in the program. 
+```python
+try:
+    age = int(input("age: "))
+    income = 20000
+    risk = income / age
+    print(age)
+except ValueError: 
+    print("Invalid value")
+except ZeroDivisionError:
+    print("Age cann't be zero")
+  ```
+  
 
