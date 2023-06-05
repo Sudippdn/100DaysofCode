@@ -15,4 +15,4 @@ while guess_count<guess_limit:
             print(" Again wrong guess. Now you have 1 chance left")
             break
 else:
-    print("You failed! You need to use your brain to active it and utilize for food stuff")
+    print("You failed")
