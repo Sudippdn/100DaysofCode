@@ -63,7 +63,7 @@ f string is used to declare to concantited the string and an integer in a same l
 ```python
 a = int(input("Enter the value of a: "))
 b = int(input("Enter the value of b: "))
-print("The sum of a and b is " + f"{a+b)")
+print("The sum of a and b is " + f"{a+b}")
 
 ```
 # Day 2 
