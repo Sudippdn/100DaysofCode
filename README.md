@@ -64,8 +64,17 @@ f string is used to declare to concantited the string and an integer in a same l
 a = int(input("Enter the value of a: "))
 b = int(input("Enter the value of b: "))
 print("The sum of a and b is " + f"{a+b}")
-
 ```
+### "While True:" 
+we can declare input multiple times and check answer by declaring "while true"
+```python
+while True:
+    age = int(input("Enter age of the candidate"))
+    print(age)
+    
+    # all the input repeate
+```
+
 # Day 2 
 ## Tuples
 
