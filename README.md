@@ -293,5 +293,64 @@ except ValueError:
 except ZeroDivisionError:
     print("Age cann't be zero")
   ```
-  
+  # Day 10
+  ## Rock Paper Scissor
+  It was interesting playing with the codes. Today, I created a rock, paper, scissor game using python. I got to introduced with pythoon module random. I was introduced with "import random" which takes list of data but functions need to be executed likely. I got to know about random function, random.randint(), random.choose(), etc.
+
+  #### Code for rock paper scissor game
+  ```python
+while True:
+    import random
+    options = (
+        '''
+            __________   
+        ---'    ______)______
+                    _________)__
+                ________________)
+                (______)
+        ---.____(______)
+        ''',
+        '''
+            ____________   
+        ---'    (_______)
+                (_______)
+                (_______)
+                (_______)
+        ---.____(_______)
+        ''',
+        '''
+            ____________   
+        ---'    ________)____
+                    _________)_
+                    ___________)
+                _____________)
+        ---.________________)
+        '''
+    )
+    scissor, rock, paper = options
+    make_a_choice = input("Make a choice: ")
+    while make_a_choice == "rock":
+        make_a_choice = rock
+        print(make_a_choice)
+        break
+        
+    while make_a_choice == "paper":
+        make_a_choice = paper
+        print(make_a_choice)
+        break
+    while make_a_choice == "scissor":
+        make_a_choice = scissor
+        print(make_a_choice)
+        break
+    # while make_a_choice is not options:
+    #     print("Invalid inputs")
+    #     break
+    print("Computer will chooose")
+    random_selection = random.choice([rock,paper,scissor])
+    print(random_selection)
+    if make_a_choice == rock and random_selection == paper or make_a_choice == paper and random_selection == scissor or make_a_choice == scissor and random_selection == rock:
+         print("You lose")
+    else:
+        print("You won")
+  ```
 
