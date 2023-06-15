@@ -350,7 +350,9 @@ while True:
     print(random_selection)
     if make_a_choice == rock and random_selection == paper or make_a_choice == paper and random_selection == scissor or make_a_choice == scissor and random_selection == rock:
          print("You lose")
+    elif make_a_choice == random_selecion:
+        print("It's a tie!")
     else:
-        print("You won")
+        print("Congratulations! You won")
   ```
 
