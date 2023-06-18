@@ -357,6 +357,22 @@ while True:
   ```
 #Day 11
 ## Generate password
+Here is a simple project to generate a random password according to the user defined number of letters, symbols and numbers.
+In this project, I was intorduced with the random module that could shuffle and choice for choosing the random character from the given list. I also learned here to convert the given variable into list. The  overall project was pretty simple but lagging with the application of the simple functions were challenging.
+
+#### Here are few import random module functions
+##### Shuddle()
+```python
+import random
+random.shuffle(*)
+# * inside parenthesis represents the list of items to shuffle 
+```
+##### Choice()
+```python
+import random
+random.choice(*)
+# * inside parenthesis represents the list of items(characters) to choose randomlt
+```
  ```python
 import random
 letters = ['a','b','c','d','e','e','f','f','g','h','h','i','j','k',
