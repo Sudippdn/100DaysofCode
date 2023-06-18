@@ -398,9 +398,10 @@ for char in range(0, ps_symbol):
 for char in range(0,ps_numbers):
     password_list += random.choice(numbers)
     
-print(password.list)     #Here is list of password without shuffle    
-random.shuffle(password)
-print(password.list)       #Here is list of password after shuffle
+print(password_list)     #Here is list of password without shuffle    
+random.shuffle(password_list)
+print(password_list)       #Here is list of password after shuffle
+
 password = ""
 for char in password_list:
     password += char 
