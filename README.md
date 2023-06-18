@@ -390,19 +390,19 @@ ps_letter = int(input("Enter the number of letters you want: "))
 ps_symbol = int(input("Enter the number of symbols you want: "))
 ps_numbers = int(input("Enter the number of numbers you want: "))
 
-password = []
-final = ""
+password_list = []
 for char in range(0, ps_letter):
-    password.append(random.choice(letters))
+    password_list.append(random.choice(letters))
 for char in range(0, ps_symbol):
-    password += random.choice(symbols)
+    password_list += random.choice(symbols)
 for char in range(0,ps_numbers):
-    password += random.choice(numbers)
+    password_list += random.choice(numbers)
     
+print(password.list)     #Here is list of password without shuffle    
 random.shuffle(password)
-print(password)
+print(password.list)       #Here is list of password after shuffle
 password = ""
-for char in password:
+for char in password_list:
     password += char 
 print(f"Your password is {password}")
  ```
