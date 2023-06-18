@@ -355,4 +355,39 @@ while True:
     else:
         print("Congratulations! You won")
   ```
+#Day 11
+## Generate password
+ ```python
+import random
+letters = ['a','b','c','d','e','e','f','f','g','h','h','i','j','k',
+          'l','m','n','o','p','q','r','s','t','u','v','w',
+          'x','y','z','A','B','C','E','F','G','H','I','J',
+          'K','L','M','N','O','P','Q','R','S','T','U','V',
+          'W','X','Y','Z']
+numbers = ['0','1','2','3','4','5','6','7','8','9']
+symbols = ['!','@','#','$','%','^','&','*','(',')','+','-','<','>','/','{','}']
+
+print("-----Generate a random password-----\n")
+password = int(input("Enter the number of characters in password: "))
+ps_letter = int(input("Enter the number of letters you want: "))
+ps_symbol = int(input("Enter the number of symbols you want: "))
+ps_numbers = int(input("Enter the number of numbers you want: "))
+
+password = []
+final = ""
+for char in range(0, ps_letter):
+    password.append(random.choice(letters))
+for char in range(0, ps_symbol):
+    password += random.choice(symbols)
+for char in range(0,ps_numbers):
+    password += random.choice(numbers)
+    
+random.shuffle(password)
+print(password)
+password = ""
+for char in password:
+    password += char 
+print(f"Your password is {password}")
+ ```
+
 
