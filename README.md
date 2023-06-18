@@ -373,6 +373,7 @@ import random
 random.choice(*)
 # * inside parenthesis represents the list of items(characters) to choose randomlt
 ```
+#### Code to generate random password
  ```python
 import random
 letters = ['a','b','c','d','e','e','f','f','g','h','h','i','j','k',
