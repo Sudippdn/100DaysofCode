@@ -355,8 +355,8 @@ while True:
     else:
         print("Congratulations! You won")
   ```
-#Day 11
-## Generate password
+# Day 11
+## Generate a password
 Here is a simple project to generate a random password according to the user defined number of letters, symbols and numbers.
 In this project, I was intorduced with the random module that could shuffle and choice for choosing the random character from the given list. I also learned here to convert the given variable into list. The  overall project was pretty simple but lagging with the application of the simple functions were challenging.
 
