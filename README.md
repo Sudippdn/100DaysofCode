@@ -407,5 +407,19 @@ for char in password_list:
     password += char 
 print(f"Your password is {password}")
  ```
+# Day 12
+```python
+alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
-
+direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
+text = input("Type your message:\n").lower()
+shift = int(input("Type the shift number:\n"))
+def encrypt(call_text, shift_amount):
+    cipher_text = ""
+    for latter in call_text:
+        text_position = alphabet.index(latter) + shift_amount
+        new_latter = alphabet[text_position]
+        cipher_text += new_latter
+    print(f"he encoded text is {cipher_text}")
+encrypt(text, shift)
+```
