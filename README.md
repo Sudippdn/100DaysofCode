@@ -424,4 +424,17 @@ def encrypt(call_text, shift_amount):
         cipher_text += new_latter                              # this will concatinate the latters 
     print(f"he encoded text is {cipher_text}")
 encrypt(text, shift)        # calling function
+
+def decrypt(cipher_text = text, shift_amount= shift):
+    cipher_result = ""
+    for latter in cipher_text:
+        text_position = alphabet.index(latter) - shift_amount
+        new_latter = alphabet[text_position]
+        cipher_result += new_latter
+    print(f"he decode text is {cipher_result}")
+
+if direction == "encode":
+    encrypt(call_text=text, shift_amount=shift)
+elif direction == "decode":
+    decrypt(cipher_text = text,shift_amount= shift)
 ```
