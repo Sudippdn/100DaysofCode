@@ -417,11 +417,11 @@ direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
 text = input("Type your message:\n").lower()
 shift = int(input("Type the shift number:\n"))
 def encrypt(call_text, shift_amount):
-    cipher_text = ""
+    cipher_text = ""        # initialize an empty string
     for latter in call_text:
-        text_position = alphabet.index(latter) + shift_amount
-        new_latter = alphabet[text_position]
-        cipher_text += new_latter
+        text_position = alphabet.index(latter) + shift_amount  # this line of code will shift the position of the individual latter
+        new_latter = alphabet[text_position]                   # this line of code will provide the shifted latter
+        cipher_text += new_latter                              # this will concatinate the latters 
     print(f"he encoded text is {cipher_text}")
-encrypt(text, shift)
+encrypt(text, shift)        # calling function
 ```
