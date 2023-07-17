@@ -11,11 +11,16 @@ for items in card_value:
 addRand = rand1 + rand2
 print(f"Your cards: [{rand1}, {rand2}], current score = {addRand}")
 print(f"Computer's first card: {rand3}")
+if addRand ==21:
+    print("Congratulation!!! You won the match")
+    break
 get_anotherCard = True
 while get_anotherCard:
     choice = input("Do you want another card? (y/n): ")
     while addRand <=21:
         if choice == 'y':
+            if addRand < 17:
+                card_value[0] = 1
             newRand = random.choice(card_value)
             newAdd = addRand + newRand
             print(f"Your final card: [{rand1}, {rand2}, {newRand}], final score = {newAdd}")
@@ -35,7 +40,7 @@ while get_anotherCard:
     
         if (newAdd == CompAdd):
             print("Game is Draw!!!")
-        elif (newAdd < CompAdd):
+        elif (newAdd < CompAdd and CompAdd < 21):
             print("Computer wins")
         elif (newAdd > CompAdd):
             print("Congratulation, you won")
