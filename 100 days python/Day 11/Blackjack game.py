@@ -15,8 +15,8 @@ while(1):
     print(f"\nYour cards: [{rand1}, {rand2}], current score = {addRand}")
     print(f"Computer's first card: {rand3}")
     if addRand == 21:
-        print("Congratulations, You won")
-        
+        print("\n\t------Congratulation, you won the match------------")
+        exit(0)
     get_anotherCard = True
     while get_anotherCard:
         choice = input("Do you want another card? (y/n): ")
