@@ -500,7 +500,7 @@ game()
 ```
 # Day 14
 Here is a day to play around the code and I found this super easy but interesting thing with me to build a qr code using python. It made me realize that I hadn't introduced path of a python file in environment variable. I then installed qrcode module using:
-```bash
+```python
 pip install qrcode
 ```
 which is super easy task for me.
