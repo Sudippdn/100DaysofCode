@@ -523,8 +523,11 @@ def generate_qr_code(data, file_name):
     img.save(file_path)
 
 # Example usage
-data_to_encode = "github.com/Sudippdn"
-file_name = "C:/Users/Sudip/Desktop/qrcode.png"
-generate_qr_code(data_to_encode, file_name)
+data = """github.com/Sudippdn
+linkedin.com/in/sudip-pradhan-a0a804239/
 
+Hi, it's me Sudip! This is a first qr code generate using python
+"""
+file_name = "C:/Users/Sudip/Desktop/qrcode.png"
+generate_qr_code(data, file_name)
 ```
