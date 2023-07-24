@@ -531,3 +531,5 @@ Hi, it's me Sudip! This is a first qr code generate using python
 file_name = "C:/Users/Sudip/Desktop/qrcode.png"
 generate_qr_code(data, file_name)
 ```
+### You can connect me through
+![qrcode](https://github.com/Sudippdn/100DaysofCode/assets/104957400/c90b3639-7db5-41d1-a5a5-15521fffda0a)
