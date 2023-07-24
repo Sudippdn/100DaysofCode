@@ -532,4 +532,4 @@ file_name = "C:/Users/Sudip/Desktop/qrcode.png"
 generate_qr_code(data, file_name)
 ```
 ### You can connect me through
-![qrcode](https://github.com/Sudippdn/100DaysofCode/assets/104957400/c90b3639-7db5-41d1-a5a5-15521fffda0a)
+![qrcode](https://github.com/Sudippdn/100DaysofCode/assets/104957400/83474155-bee1-4900-8621-8b8f88f03240)
