@@ -498,3 +498,33 @@ def game():
 
 game()
 ```
+# Day 14
+Here is a day to play around the code and I found this super easy but interesting thing with me to build a qr code using python. It made me realize that I hadn't introduced path of a python file in environment variable. I then installed qrcode module using:
+```bash
+pip install qrcode
+```
+which is super easy task for me.
+```python
+import os
+import qrcode
+
+def generate_qr_code(data, file_name):
+    qr = qrcode.QRCode(
+        version=1,
+        error_correction=qrcode.constants.ERROR_CORRECT_L,
+        box_size=10,
+        border=4,
+    )
+    qr.add_data(data)
+    qr.make(fit=True)
+
+    img = qr.make_image(fill_color="black", back_color="white")
+    file_path = os.path.abspath(file_name)
+    img.save(file_path)
+
+# Example usage
+data_to_encode = "Hello, Programmers!"
+file_name = "C:/Users/Sudip/Desktop/qrcode.png"
+generate_qr_code(data_to_encode, file_name)
+
+```
