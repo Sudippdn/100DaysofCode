@@ -223,6 +223,9 @@ Coffee ={
 }
 # print statement to print the information of latte form the dictionary
 print(Coffee["Latte"])
+
+# here is a way to access the value of item from the dictionary
+print(Coffee["Latte"]["Price"])   # Output = $2.5
 ```
 # Day 6
 ## Split() method
