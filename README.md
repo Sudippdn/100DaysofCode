@@ -199,6 +199,31 @@ for ch in phone:
     output += numbering.get(ch) + " "     # input = 529
 print(output )                            # Output = five two nine
 ```
+### Nested Dictionary
+Using dictionary inside the main dictionary
+```python
+Coffee ={
+    "Espresso" : {
+        "CoffeeAmt" : '18g',
+        "WaterAmt" : "50 ml",
+        "Price" : "$1.5"
+    },
+    "Latte" : {
+        "WaterAmt" : "200ml",
+        "CoffeeAmt" : "24g",
+        "Milk" : "150ml",
+        "Price" : "$2.5"
+    },
+    "Cappaccino" : {
+        "waterAmt" : "250ml",
+        "CoffeeAmt" : "24g",
+        "Milk" : "100ml",
+        "Price" : "$3.00"
+    }
+}
+# print statement to print the information of latte form the dictionary
+print(Coffee["Latte"])
+```
 # Day 6
 ## Split() method
 Split method is used in python to split in a list to the given string to varius substrings
