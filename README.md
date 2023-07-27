@@ -564,6 +564,7 @@ generate_qr_code(data, file_name)
 
 # Day 15
 ## Coffee Machine
+Here is a simple coffee machine
 ```python
 MENU ={
     "Espresso": {
