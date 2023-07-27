@@ -561,3 +561,53 @@ generate_qr_code(data, file_name)
 ```
 ### You can connect me through
 ![qrcode](https://github.com/Sudippdn/100DaysofCode/assets/104957400/83474155-bee1-4900-8621-8b8f88f03240)
+
+# Day 15
+## Coffee Machine
+```python
+MENU ={
+    "Espresso": {
+        "ingredients": {
+            "CoffeeAmt": '18g',
+            "WaterAmt": "50 ml",
+        },
+        "Cost": "$1.5"
+    },
+    "Latte": {
+        "ingredients": {
+            "WaterAmt": "200ml",
+            "CoffeeAmt": "24g",
+            "Milk": "150ml"
+        },
+        "Cost": "$2.5"
+    },
+    "Cappuccino": {
+        "ingredients": {
+            "waterAmt": "250ml",
+            "CoffeeAmt": "24g",
+            "Milk": "100ml",
+        },
+        "Cost": "$3.00"
+    }
+}
+resources = {
+    "Water": "300",
+    "Milk": "200",
+    "Coffee": "100"
+}
+
+profit = 0
+print(MENU["Cappuccino"])
+is_on = True
+while is_on:
+    choice = input("Wha would you like? (Espresso/Latte/Cappuccino): ")
+    if choice == "exit":
+        is_on = False
+    elif choice == "reports":
+        print(f"Water = {resources['Water']}ml")
+        print(f"Milk = {resources['Milk']}ml")
+        print(f"Coffee = {resources['Coffee']}gram")
+        print(f"Money = $   {profit} \n")
+
+
+```
