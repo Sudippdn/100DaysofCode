@@ -564,9 +564,9 @@ generate_qr_code(data, file_name)
 
 # Day 15
 ## Coffee Machine
-Here is a simple coffee machine
+Here is a simple coffee machine. 
 ```python
-MENU ={
+MENU = {
     "Espresso": {
         "ingredients": {
             "CoffeeAmt": '18g',
@@ -591,14 +591,31 @@ MENU ={
         "Cost": "$3.00"
     }
 }
+
 resources = {
     "Water": "300",
     "Milk": "200",
     "Coffee": "100"
 }
 
+def is_resource_sufficient(order_ingredients):
+    """Returns True when orders can be made and False when ingredients is insufficient"""
+    for item in order_ingredients:
+        if order_ingredients[items] >= resources[items]:
+            print("Sorry there is not enough water.")
+            return False
+    return True
+
+def process_coin():
+    """Returns the total calculated from coins inserted"""
+    print("Please insert coin!")
+    total = int(input("How many quarters? ")) * 0.25
+    total = int(input("How many dimes? ")) * 0.1
+    total = int(input("How many nickels? ")) * 0.01
+    total = int(input("How many penny? ")) * 0.01
+    return total
+
 profit = 0
-print(MENU["Cappuccino"])
 is_on = True
 while is_on:
     choice = input("Wha would you like? (Espresso/Latte/Cappuccino): ")
@@ -608,7 +625,9 @@ while is_on:
         print(f"Water = {resources['Water']}ml")
         print(f"Milk = {resources['Milk']}ml")
         print(f"Coffee = {resources['Coffee']}gram")
-        print(f"Money = $   {profit} \n")
-
-
+        print(f"Money = ${profit} \n")
+    else:
+        drink = MENU[choice]
+        if is_resource_sufficient(drink["ingredients"]):
+            payment = process_coin()
 ```
