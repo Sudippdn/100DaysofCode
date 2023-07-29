@@ -565,57 +565,83 @@ generate_qr_code(data, file_name)
 # Day 15
 ## Coffee Machine
 Here is a simple coffee machine. 
+
+## I have divided a program in two files and import the data from "items.py" to '"coffee machine.py"
+
+#### Here is items.py part program
 ```python
 MENU = {
     "Espresso": {
         "ingredients": {
-            "CoffeeAmt": '18g',
-            "WaterAmt": "50 ml",
+            "Coffee": 18,
+            "Water": 50,
         },
-        "Cost": "$1.5"
+        "Cost": 1.5
     },
     "Latte": {
         "ingredients": {
-            "WaterAmt": "200ml",
-            "CoffeeAmt": "24g",
-            "Milk": "150ml"
+            "Water": 200,
+            "Coffee": 24,
+            "Milk": 150
         },
-        "Cost": "$2.5"
+        "Cost": 2.5
     },
     "Cappuccino": {
         "ingredients": {
-            "waterAmt": "250ml",
-            "CoffeeAmt": "24g",
-            "Milk": "100ml",
+            "Water": 250,
+            "Coffee": 24,
+            "Milk": 100
         },
-        "Cost": "$3.00"
+        "Cost": 3.0,
     }
 }
 
 resources = {
-    "Water": "300",
-    "Milk": "200",
-    "Coffee": "100"
+    "Water": 300,
+    "Milk": 200,
+    "Coffee": 100
 }
+```
+#### Here is a programming code for "coffee machine.py"
+```python
+from items import MENU
+from items import resources
+profit = 0
+
 
 def is_resource_sufficient(order_ingredients):
     """Returns True when orders can be made and False when ingredients is insufficient"""
     for item in order_ingredients:
-        if order_ingredients[items] >= resources[items]:
-            print("Sorry there is not enough water.")
+        if order_ingredients[item] >= resources[item]:
+            print("Sorry there is not enough {items}.")
             return False
     return True
 
+
 def process_coin():
     """Returns the total calculated from coins inserted"""
+    total = 0
     print("Please insert coin!")
-    total = int(input("How many quarters? ")) * 0.25
-    total = int(input("How many dimes? ")) * 0.1
-    total = int(input("How many nickels? ")) * 0.01
-    total = int(input("How many penny? ")) * 0.01
+    total += int(input("How many quarters? ")) * 0.25
+    total += int(input("How many dimes? ")) * 0.1
+    total += int(input("How many nickels? ")) * 0.01
+    total += int(input("How many penny? ")) * 0.01
     return total
 
-profit = 0
+
+def is_transaction_successful(money_received, drink_cost):
+    """Return True when the payment is accepted, or False if money is insufficient"""
+    if money_received >= drink_cost:
+        change = round(money_received - drink_cost, 2)
+        print(f"Here is ${change} in change ")
+        global profit
+        profit += drink_cost
+        return True
+    else:
+        print("Sorry that's not enough money. Money refunded!!!")
+        return False
+
+
 is_on = True
 while is_on:
     choice = input("Wha would you like? (Espresso/Latte/Cappuccino): ")
@@ -630,4 +656,6 @@ while is_on:
         drink = MENU[choice]
         if is_resource_sufficient(drink["ingredients"]):
             payment = process_coin()
+            is_transaction_successful(payment, drink["Cost"])
+payment = process_coin()
 ```
