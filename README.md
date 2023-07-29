@@ -566,7 +566,7 @@ generate_qr_code(data, file_name)
 ## Coffee Machine
 Here is a simple coffee machine. 
 
-## I have divided a program in two files and import the data from "items.py" to '"coffee machine.py"
+### I have divided a program in two files and import the data from "items.py" to '"coffee machine.py"
 
 #### Here is items.py part program
 ```python
