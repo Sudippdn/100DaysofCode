@@ -564,11 +564,10 @@ generate_qr_code(data, file_name)
 
 # Day 15
 ## Coffee Machine
-Here is a simple coffee machine. 
-
-### I have divided a program in two files and import the data from "items.py" to '"coffee machine.py"
+I have divided a program in two files and import the data from "items.py" to '"coffee machine.py"
 
 #### Here is items.py part program
+In this part, I constructed MENU file for the coffee items along with the ingredients required. The cost of the particular types of coffee is also mentioned here.
 ```python
 MENU = {
     "Espresso": {
@@ -603,6 +602,7 @@ resources = {
 }
 ```
 #### Here is a programming code for "coffee machine.py"
+In this part of the program, I have imported MENU and resources from items which is located in items.py. Created different functions for the operations and perform the differtent task. In these program, the machine checks the inserted coin total value and perform it its is sufficient or not along with the refund amount if it exceed.
 ```python
 from items import MENU
 from items import resources
