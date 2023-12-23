@@ -666,5 +666,4 @@ while is_on:
             if is_transaction_successful(payment, drink["Cost"]):
                 make_coffee(choice, drink["ingredients"])
 ```
-# Day 16
-## Turtle 
+# Testing
