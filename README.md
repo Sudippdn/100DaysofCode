@@ -1,7 +1,7 @@
 # Day 1
 
 Here is how we can declare the variables in python. Python is an easiest programming language in case of data declaration. Data type in python don't need to declare individually instead it identify the type of data we declared automatically.
-
+# TABLE OF CONTENTS
 
 ##  Variable declaration
 #### Declaring string
