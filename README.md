@@ -1,5 +1,4 @@
 # TABLE OF CONTENTS
-project along with date will be here  
 
 # Day 1
 
